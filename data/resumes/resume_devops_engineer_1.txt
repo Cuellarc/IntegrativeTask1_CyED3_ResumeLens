@@ -1,0 +1,17 @@
+Sebastian Marin
+Location: Cali, Colombia
+Current role: DevOps Engineer
+Email: sebastian.marin@example.com
+Phone: 310 555 1234
+
+Summary:
+Infrastructure engineer focused on automating deployments and cloud environments.
+
+Experience:
+DevOps Engineer - CloudNova (4 years)
+- Automated build and deployment pipelines using Jenkins.
+- Managed containers with Docker and Kubernetes.
+- Provisioned infrastructure on AWS with Terraform.
+
+Technical Skills:
+Linux, Docker, Jenkins, AWS, Terraform, Git.

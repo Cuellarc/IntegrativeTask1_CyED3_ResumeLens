@@ -1,0 +1,11 @@
+Daniela Torres
+Email: daniela.torres@example.com
+
+Experience:
+Software Engineer - Tech Orbit (5 years)
+- Built web interfaces with JavaScript and React.
+- Developed REST services with Node.js backed by PostgreSQL.
+- Trained predictive models using Python, Pandas and TensorFlow.
+
+Technical Skills:
+JS, ReactJS, Node.js, PostgreSQL, Python, Pandas, TensorFlow, Git.

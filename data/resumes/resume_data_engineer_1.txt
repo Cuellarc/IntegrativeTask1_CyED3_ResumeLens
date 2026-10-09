@@ -1,0 +1,15 @@
+Laura Gomez
+Location: Bogota, Colombia
+Current role: Data Engineer
+Email: laura.gomez@example.com
+
+Education:
+Master in Data Science - Universidad Icesi
+
+Experience:
+Data Engineer - DataBridge (3 years)
+- Built batch pipelines with Spark and scheduled them with Airflow.
+- Loaded curated data into Snowflake.
+
+Technical Skills:
+Python, SQL, Spark, Airflow, Snowflake, Git.
