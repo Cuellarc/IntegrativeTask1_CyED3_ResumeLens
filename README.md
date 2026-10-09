@@ -10,7 +10,7 @@ Universidad Icesi - Departamento de CSI
 | Member | Student code |
 |---|---|
 | Juan Esteban Cuéllar | A00402548 |
-| Juan Pablo Sinisterra | - |
+| Juan Pablo Sinisterra | A00402333 |
 
 **Course group:** 3 (Professor Andrés)
 
