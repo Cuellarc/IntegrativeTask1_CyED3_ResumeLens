@@ -3,9 +3,7 @@
 Integrative Task 1 - Computación y Estructuras Discretas III (CyED3), 2026-2
 Universidad Icesi - Departamento de CSI
 
-## Team
-
-**Team name:** ParSeros
+## Team: **ParSeros**
 
 | Member | Student code |
 |---|---|
