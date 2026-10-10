@@ -1,0 +1,74 @@
+CandidateProfile:
+    'candidate' '"' name=TEXT '"' '{'
+        (
+            'contact' '{'
+                ('email' ':' '"' email=EMAIL '"')?
+                ('phone' ':' '"' phone=PHONE '"')?
+                ('link' ':' '"' links+=TEXT '"')*
+            '}'
+        )?
+        ('location' ':' '"' location=TEXT '"')?
+        ('role' ':' '"' current_role=TEXT '"')?
+        ('summary' ':' '"' summary=TEXT '"')?
+        (
+            'education' '{'
+                ('"' education+=TEXT '"')*
+            '}'
+        )?
+        experiences*=Experience
+        'skills' '{'
+            skills+=QUALIFICATION[',']
+        '}'
+        (
+            'classification' '{'
+                classifications*=ClassificationEntry
+            '}'
+        )?
+    '}'
+;
+
+Experience:
+    'experience' '{'
+        years=NON_NEGATIVE_INT 'years'
+        '"' description=TEXT '"'
+        ('role' '"' role=TEXT '"')?
+        ('organization' '"' organization=TEXT '"')?
+        (
+            '{'
+                ('"' highlights+=TEXT '"')*
+            '}'
+        )?
+    '}'
+;
+
+ClassificationEntry:
+    profile=ProfileName ':' 'ACCEPTED'
+    '[' qualifications+=QUALIFICATION[','] ']'
+;
+
+ProfileName:
+      'FULL_STACK_DEVELOPER'
+    | 'MACHINE_LEARNING_ENGINEER'
+    | 'DEVOPS_ENGINEER'
+    | 'DATA_ENGINEER'
+;
+
+TEXT:
+    /[^"\r\n]+/
+;
+
+EMAIL:
+    /[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Za-z]{2,}/
+;
+
+PHONE:
+    /\+?[0-9][0-9 ()-]{5,}[0-9]/
+;
+
+QUALIFICATION:
+    /[A-Z][A-Z0-9]*(?:_[A-Z0-9]+)*/
+;
+
+NON_NEGATIVE_INT:
+    /0|[1-9][0-9]*/
+;
