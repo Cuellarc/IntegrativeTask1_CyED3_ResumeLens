@@ -1,0 +1,27 @@
+candidate "Gwen Stacy" {
+    contact {
+        email: "gwen.stacy@example.com"
+    }
+
+    role: "Data Engineer"
+
+    skills {
+        PYTHON,
+        SQL,
+        SPARK,
+        AIRFLOW,
+        SNOWFLAKE,
+        GIT
+    }
+
+    classification {
+        DATA_ENGINEER: ACCEPTED [
+            PYTHON,
+            SQL,
+            SPARK,
+            AIRFLOW,
+            SNOWFLAKE,
+            GIT
+        ]
+    }
+}

@@ -1,0 +1,11 @@
+candidate "Diana Prince" {
+    contact {
+        link: "https://github.com/diana"
+    }
+
+    skills {
+        PYTHON,
+        SQL,
+        SPARK
+    }
+}

@@ -1,0 +1,11 @@
+candidate "Unknown Profile" {
+    skills {
+        PYTHON
+    }
+
+    classification {
+        SOFTWARE_ARCHITECT: ACCEPTED [
+            PYTHON
+        ]
+    }
+}

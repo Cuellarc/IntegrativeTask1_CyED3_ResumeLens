@@ -1,0 +1,4 @@
+candidate "Missing Brace" {
+    skills {
+        PYTHON
+    }

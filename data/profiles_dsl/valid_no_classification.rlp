@@ -1,0 +1,10 @@
+candidate "Bruce Wayne" {
+    contact {
+        email: "bruce.wayne@example.com"
+    }
+
+    skills {
+        PYTHON,
+        SQL
+    }
+}

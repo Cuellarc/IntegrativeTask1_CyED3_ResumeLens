@@ -1,0 +1,29 @@
+candidate "Mary Jane Watson" {
+    contact {
+        email: "mary.jane@example.com"
+    }
+
+    role: "Machine Learning Engineer"
+
+    experience {
+        2 years "Developing predictive models and data processing pipelines."
+    }
+
+    skills {
+        PYTHON,
+        PANDAS,
+        SCIKIT_LEARN,
+        SQL,
+        GIT
+    }
+
+    classification {
+        MACHINE_LEARNING_ENGINEER: ACCEPTED [
+            PYTHON,
+            PANDAS,
+            SCIKIT_LEARN,
+            SQL,
+            GIT
+        ]
+    }
+}
