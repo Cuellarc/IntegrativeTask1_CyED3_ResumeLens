@@ -1,0 +1,9 @@
+candidate "Negative Years" {
+    experience {
+        -1 years "Invalid professional experience."
+    }
+
+    skills {
+        PYTHON
+    }
+}

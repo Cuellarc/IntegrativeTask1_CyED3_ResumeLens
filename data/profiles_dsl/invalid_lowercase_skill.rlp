@@ -1,0 +1,5 @@
+candidate "Lowercase Skill" {
+    skills {
+        python
+    }
+}

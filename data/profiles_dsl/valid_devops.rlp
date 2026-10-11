@@ -1,0 +1,27 @@
+candidate "Peter Parker" {
+    contact {
+        email: "peter.parker@example.com"
+    }
+
+    role: "DevOps Engineer"
+
+    skills {
+        LINUX,
+        DOCKER,
+        JENKINS,
+        AWS,
+        TERRAFORM,
+        GIT
+    }
+
+    classification {
+        DEVOPS_ENGINEER: ACCEPTED [
+            LINUX,
+            DOCKER,
+            JENKINS,
+            AWS,
+            TERRAFORM,
+            GIT
+        ]
+    }
+}

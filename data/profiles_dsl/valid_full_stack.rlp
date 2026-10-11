@@ -1,0 +1,43 @@
+candidate "Wednesday Addams" {
+    contact {
+        email: "wednesday.addams@example.com"
+        phone: "+57 300 123 4567"
+        link: "https://github.com/wednesday"
+    }
+
+    location: "Nevermore Academy, Jericho"
+    role: "Web Application Developer"
+    summary: "Detail-oriented developer with three years of experience developing web applications."
+
+    education {
+        "Bachelor in Computer Science"
+    }
+
+    experience {
+        3 years "Developing web applications and structured information systems."
+        role "Web Application Developer"
+        organization "Nevermore Academy Projects" {
+            "Developed web applications for organizing investigation notes."
+            "Implemented backend services using Node.js."
+            "Stored structured information using PostgreSQL."
+        }
+    }
+
+    skills {
+        JAVASCRIPT,
+        REACT,
+        NODE_JS,
+        POSTGRESQL,
+        GIT
+    }
+
+    classification {
+        FULL_STACK_DEVELOPER: ACCEPTED [
+            JAVASCRIPT,
+            REACT,
+            NODE_JS,
+            POSTGRESQL,
+            GIT
+        ]
+    }
+}

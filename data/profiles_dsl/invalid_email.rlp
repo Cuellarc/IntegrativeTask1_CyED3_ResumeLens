@@ -1,0 +1,9 @@
+candidate "Invalid Email" {
+    contact {
+        email: "invalid-email"
+    }
+
+    skills {
+        PYTHON
+    }
+}
