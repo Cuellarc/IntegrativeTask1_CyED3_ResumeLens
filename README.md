@@ -154,9 +154,13 @@ The design documents are in the [docs/](docs/) directory, written in Markdown:
 | [modules_extraction_normalization.md](docs/modules_extraction_normalization.md) | Modules of Stages 1 and 2 with inputs and outputs |
 | [formalization_extraction_normalization.md](docs/formalization_extraction_normalization.md) | Regular expressions and transducers (7-tuples and diagrams) |
 | [tests_extraction_normalization.md](docs/tests_extraction_normalization.md) | Test cases of Stages 1 and 2 |
+| [modules_classification_dsl.md](docs/modules_classification_dsl.md) | Modules of Stages 3 and 4 with inputs and outputs |
+| [formalization_classification_dsl.md](docs/formalization_classification_dsl.md) | Profile automata (5-tuples and diagrams) and the candidate profile grammar (EBNF) |
+| [tests_classification_dsl.md](docs/tests_classification_dsl.md) | Test cases of Stages 3 and 4 |
 | [literature_review.md](docs/literature_review.md) | Literature review |
 | [transducer_catalog.md](docs/transducer_catalog.md) | Complete 7-tuple and diagram of each of the 41 transducers |
 | [ResumeLens-Poster.pdf](poster/ResumeLens-Poster.pdf) | Research poster |
+| [ai_usage_log.md](docs/ai_usage_log.md) | Generative AI usage log |
 
 ## Project status
 
