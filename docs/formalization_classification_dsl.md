@@ -26,3 +26,120 @@ where:
 
 ```text
 Q = {q0, q1, q2, q3, q4, q5}
+
+---
+
+## 2. Candidate Profile Domain-Specific Language
+
+After the extraction, normalization, and classification stages, ResumeLens represents the processed candidate information using a domain-specific language.
+
+The language is implemented with textX and describes the structured information of a candidate, including personal information, contact information, education, professional experience, normalized technical skills, and accepted professional profiles.
+
+The DSL is designed to represent the result produced by ResumeLens rather than the original résumé text.
+
+---
+
+## 2.1 EBNF Grammar
+
+The candidate profile language can be represented using the following EBNF notation:
+
+```ebnf
+CandidateProfile =
+    "candidate", STRING, "{",
+        [ Contact ],
+        [ Location ],
+        [ Role ],
+        [ Summary ],
+        [ Education ],
+        { Experience },
+        Skills,
+        [ Classification ],
+    "}";
+
+Contact =
+    "contact", "{",
+        [ "email", ":", EMAIL ],
+        [ "phone", ":", PHONE ],
+        { "link", ":", STRING },
+    "}";
+
+Location =
+    "location", ":", STRING;
+
+Role =
+    "role", ":", STRING;
+
+Summary =
+    "summary", ":", STRING;
+
+Education =
+    "education", "{",
+        { STRING },
+    "}";
+
+Experience =
+    "experience", "{",
+        NON_NEGATIVE_INT, "years",
+        STRING,
+        [ "role", STRING ],
+        [ "organization", STRING ],
+        [ Highlights ],
+    "}";
+
+Highlights =
+    "{",
+        { STRING },
+    "}";
+
+Skills =
+    "skills", "{",
+        QUALIFICATION,
+        { ",", QUALIFICATION },
+    "}";
+
+Classification =
+    "classification", "{",
+        { ClassificationEntry },
+    "}";
+
+ClassificationEntry =
+    PROFILE_NAME,
+    ":",
+    "ACCEPTED",
+    "[",
+        QUALIFICATION,
+        { ",", QUALIFICATION },
+    "]";
+
+PROFILE_NAME =
+      "FULL_STACK_DEVELOPER"
+    | "MACHINE_LEARNING_ENGINEER"
+    | "DEVOPS_ENGINEER"
+    | "DATA_ENGINEER";
+
+STRING =
+    '"', TEXT, '"';
+
+TEXT =
+    character sequence excluding double quotes and line breaks;
+
+EMAIL =
+    valid local-part,
+    "@",
+    valid domain,
+    ".",
+    alphabetic top-level domain;
+
+PHONE =
+    [ "+" ],
+    digit,
+    { digit | space | "(" | ")" | "-" },
+    digit;
+
+QUALIFICATION =
+    uppercase letter,
+    { uppercase letter | digit | "_" };
+
+NON_NEGATIVE_INT =
+    "0"
+    | non-zero digit, { digit };
