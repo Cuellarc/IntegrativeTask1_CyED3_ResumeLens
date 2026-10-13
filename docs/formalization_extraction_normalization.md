@@ -258,7 +258,7 @@ The edge `u,b,e,r,n,e,t,e` abbreviates the chain of eight states `v0_1 … v0_9`
 
 ResumeLens uses **41 transducers**, one per canonical qualification. All of them are built by the same construction of section 2.2, so the complete 7-tuple of any of them follows by applying the construction to its list of spellings. The table gives, for each transducer, the parameters that determine its tuple: the spellings, the number of states `|Q|`, the number of accepting states `|F|` and the input alphabet `Σ`. The output alphabet of the transducer `C` is `Γ = { C }`, the initial state is always `q0`, and `F` is the set of the last state of each spelling path.
 
-The diagram of any transducer can also be exported from the code, for example `build_transducer("GIT", ["git"]).write_as_dot("git.dot")` produces a Graphviz file.
+The complete 7-tuple and the transition diagram of each of the 41 transducers are written out in [transducer_catalog.md](transducer_catalog.md). The diagram of any transducer can also be exported from the code, for example `build_transducer("GIT", ["git"]).write_as_dot("git.dot")` produces a Graphviz file.
 
 | # | Canonical name (Γ) | Spellings | \|Q\| | \|F\| | Input alphabet Σ |
 |---|---|---|---|---|---|

@@ -155,6 +155,8 @@ The design documents are in the [docs/](docs/) directory, written in Markdown:
 | [formalization_extraction_normalization.md](docs/formalization_extraction_normalization.md) | Regular expressions and transducers (7-tuples and diagrams) |
 | [tests_extraction_normalization.md](docs/tests_extraction_normalization.md) | Test cases of Stages 1 and 2 |
 | [literature_review.md](docs/literature_review.md) | Literature review |
+| [transducer_catalog.md](docs/transducer_catalog.md) | Complete 7-tuple and diagram of each of the 41 transducers |
+| [ResumeLens-Poster.pdf](poster/ResumeLens-Poster.pdf) | Research poster |
 
 ## Project status
 
